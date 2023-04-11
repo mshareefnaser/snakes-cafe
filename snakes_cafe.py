@@ -8,7 +8,8 @@ def print_menu():
     print('Drinks\n------\nCoffee\nTea\nUnicorn Tears\n')
     print('***********************************\n** What would you like to order? **\n***********************************\n')
 
-def print_order(order=input('>')):
+def print_order():
+    order = ''
     menu = ['Wings', 'Cookies', 'Spring Rolls', 'Salmon', 'Steak', 'Meat Tornado',
     'A Literal Garden', 'Ice Cream', 'Cake', 'Pie', 'Coffee', 'Tea', 'Unicorn Tears']
     orders_number = 0
@@ -26,7 +27,8 @@ def print_order(order=input('>')):
                 order_items.append(order)
                 print("** 1 order of {} have been added to your meal **".format(order))
         else:
-            print ("Your order not listed in the menu, please choose one from it! ")     
+            print ("Your order not listed in the menu, please choose one from it! ")    
+    unique_items = list(set(order_items)) 
     if len(unique_items)>0:
         print ('** Your order details: **')   
         for item in order_items:

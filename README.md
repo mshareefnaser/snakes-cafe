@@ -14,4 +14,3 @@
 - Clone this repository: `git clone git@github.com:mshnas9/snakes-cafe.git`
 - Navigate to the project directory: `cd snakes-cafe`
 - Run the application: `python snakes_cafe.py`
-
